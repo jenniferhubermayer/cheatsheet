@@ -9,4 +9,63 @@
 html
 {
     font-family: 'Inconsolata', monospace;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+h1{
+    font-size: 3rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    padding-left: 1rem;
+}
+
+h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/*----- Header -----*/
+
+
+/*----- Sections -----*/
+
+section{
+    margin-left: 3rem;
+    background-color: white;
+    width: 80vw;
+}
+
+table{
+    margin-bottom: 3rem;
+    border: black solid 1px;
+    border-collapse: collapse;
+}
+
+thead, td:not(td:first-of-type) {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+tbody, tr, td, th{
+    border: black solid 1px;
+}
+    
+td:first-of-type{
+    font-size: 18px;
+    width: 30%;
+}
+
+td, th{
+    padding: 0.5rem;
+    text-align: left;
+}
+
+span{
+    font-weight: bold;
+    color: blue;
+}
+
+thead{
+    background-color: aquamarine;
 }

@@ -5,7 +5,153 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spickzettel für Terminal und Git-Kommandos</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Spickzettel für Terminal und Git-Kommandos</h1>
+    </header>
+    <main>
+      <section id="git-kommandos">
+        <h2>Git-Kommandos</h2>
+        <table>
+          <thead>
+            <th>Command</th>
+            <th>Beschreibung</th>
+            <th>Info</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>git add *</td>
+              <td>Änderungen werden vorgeschlagen.</td>
+              <td>
+                Durch den Stern werden alle Dateien im Verzeichnis hochgeladen!
+              </td>
+            </tr>
+            <tr>
+              <td>git commit -m "Nachricht"</td>
+              <td>Änderungen werden bestätigt</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>git push</td>
+              <td>Änderungen werden zu GitHub hochgeladen</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>git branch</td>
+              <td>
+                Übersicht: Welche Branches haben wir und in welchem Befinde ich
+                mich?
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>git branch <span>branchname</span></td>
+              <td>Erstellt einen neuen Branch</td>
+              <td>
+                Bei branchname immer den gewünschten (neuen) Branch einfügen
+              </td>
+            </tr>
+            <tr>
+              <td>git checkout -b <span>branchname</span></td>
+              <td>
+                Erstellt einen neuen Branch und wechselt sofort in diesen
+                Branch.
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>git push -u origin <span>branchname</span></td>
+              <td>Lädt den neuen Branch hoch</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>git checkout <span>branchname</span></td>
+              <td>Wechselt zu dem gewünschten Branch</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>git branch -d <span>branchname</span></td>
+              <td>Löscht den Branch im lokalen Repository</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>git checkout main</td>
+              <td>In der Hauptastamm wechseln</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>git branch</td>
+              <td>Gucken dass wir im richtigen Branch sind</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>git merge <span>branchname</span></td>
+              <td>
+                Änderungen aus der "Branchname" in der Hauptstammt einpflegen
+              </td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="terminal-kommandos">
+        <h2>Terminal-Kommandos</h2>
+        <table>
+          <thead>
+            <th>Command</th>
+            <th>Beschreibung</th>
+            <th>Info</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>cd</td>
+              <td>"Change Directory" - wechselt in einen Unterordner</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>pwd</td>
+              <td>
+                "Print Working Directory" - zeigt das aktuelle Verzeichnis an
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>ls</td>
+              <td>"List" - zeigt den Inhalt eines Ordners an</td>
+              <td>ls -a zeigt auch unsichtbare Dateien an</td>
+            </tr>
+            <tr>
+              <td>cp</td>
+              <td>"Copy" - kopiert Datei</td>
+              <td>Beispiel: cp Pfad/Quellordner Pfad/Zielordner</td>
+            </tr>
+            <tr>
+              <td>mv</td>
+              <td>"Move" - verschiebt eine Datei</td>
+              <td>Beispiel: mv Pfad/Quellordner Pfad/Zielordner</td>
+            </tr>
+            <tr>
+              <td>rm</td>
+              <td>"Remove" - löscht Dateien</td>
+              <td>
+                Datei: rm Pfad/Datei; Ordner: rmdir -R ~/Documents/Löschen
+              </td>
+            </tr>
+            <tr>
+              <td>mkdir</td>
+              <td>"Make Directory" - erzeugt einen neuen Ordner</td>
+              <td>Beispiel: mkdir "Ordnerbezeichnung"</td>
+            </tr>
+            <tr>
+              <td>touch</td>
+              <td>Erzeugt eine leere Datei</td>
+              <td>Beispiel: touch Dateiname(.Dateitypendung)</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
 </html>
