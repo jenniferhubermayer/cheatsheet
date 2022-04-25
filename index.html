@@ -25,17 +25,23 @@
               <td>git add *</td>
               <td>Änderungen werden vorgeschlagen.</td>
               <td>
-                Durch den Stern werden alle Dateien im Verzeichnis hochgeladen!
+                Durch den Stern werden alle Dateien im Verzeichnis hochgeladen.
+                Statt des Sternchens können auch gezielt Dateien genannt werden,
+                die hochgeladen werden sollen.
               </td>
             </tr>
             <tr>
-              <td>git commit -m "Nachricht"</td>
-              <td>Änderungen werden bestätigt</td>
-              <td></td>
+              <td>git commit -m "<span>Nachricht</span>"</td>
+              <td>Änderungen werden bestätigt.</td>
+              <td>
+                In der Nachricht dann eine verständliche Erklärungen für die
+                anderen Entwickler*innen hinterlassen, welche Änderungen in
+                dieser Version durchgeführt wurden.
+              </td>
             </tr>
             <tr>
               <td>git push</td>
-              <td>Änderungen werden zu GitHub hochgeladen</td>
+              <td>Änderungen werden zu GitHub hochgeladen.</td>
               <td></td>
             </tr>
             <tr>
@@ -48,9 +54,10 @@
             </tr>
             <tr>
               <td>git branch <span>branchname</span></td>
-              <td>Erstellt einen neuen Branch</td>
+              <td>Erstellt einen neuen Branch.</td>
               <td>
-                Bei branchname immer den gewünschten (neuen) Branch einfügen
+                Bei branchname immer den gewünschten (neuen) Branch einfügen.
+                Der neue Branch muss dann noch gepushed werden (siehe unten).
               </td>
             </tr>
             <tr>
@@ -63,12 +70,12 @@
             </tr>
             <tr>
               <td>git push -u origin <span>branchname</span></td>
-              <td>Lädt den neuen Branch hoch</td>
+              <td>Lädt den neuen Branch hoch.</td>
               <td></td>
             </tr>
             <tr>
               <td>git checkout <span>branchname</span></td>
-              <td>Wechselt zu dem gewünschten Branch</td>
+              <td>Wechselt zu dem gewünschten Branch.</td>
               <td></td>
             </tr>
             <tr>
@@ -82,16 +89,40 @@
               <td></td>
             </tr>
             <tr>
-              <td>git branch</td>
-              <td>Gucken dass wir im richtigen Branch sind</td>
-              <td></td>
+              <td>git pull</td>
+              <td>
+                Um den aktuellen Stand des des Masters/der Branch in Visual
+                Studio zu laden.
+              </td>
+              <td>Darauf achten, in welcher Branch man sich befindet.</td>
             </tr>
             <tr>
               <td>git merge <span>branchname</span></td>
               <td>
-                Änderungen aus der "Branchname" in der Hauptstammt einpflegen
+                Um den Arbeitsstand eines Branches in den Master zu
+                implementieren.
               </td>
-              <td></td>
+              <td>
+                Um den Hauptstamm zu ändern, muss man sich im Master befinden.
+              </td>
+            </tr>
+            <tr>
+              <td>git merge origin/master</td>
+              <td>
+                Um in die eigene Branch die aktuelle Version aus dem Master zu
+                laden.
+              </td>
+              <td>
+                Dafür muss man sich dann auch in der eigenen Branch befinden.
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <a href="https://miro.com/app/board/uXjVOHmkVuo=/"
+                  >Hier geht es zu Franzi's Miro-Board mit einigen wichtigen
+                  Befehlen.</a
+                >
+              </td>
             </tr>
           </tbody>
         </table>

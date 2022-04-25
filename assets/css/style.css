@@ -69,3 +69,7 @@ span{
 thead{
     background-color: aquamarine;
 }
+
+a::before{
+    content: "> ";
+}
