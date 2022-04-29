@@ -73,3 +73,15 @@ thead{
 a::before{
     content: "> ";
 }
+
+.thead-2-start, .thead-2-ende{
+    background-color: rgb(169, 248, 222);
+}
+
+.thead-2-start::before{
+    content:'>';
+}
+
+.thead-2-ende::after{
+    content:' <';
+}
