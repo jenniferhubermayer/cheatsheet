@@ -372,17 +372,17 @@
             <tr>
               <td>+</td>
               <td>Addition</td>
-              <td>xxx</td>
+              <td></td>
             </tr>
             <tr>
               <td>-</td>
-              <td>Sustraktion</td>
-              <td>xxx</td>
+              <td>Subtraktion</td>
+              <td></td>
             </tr>
             <tr>
               <td>*</td>
               <td>Multiplikation</td>
-              <td>xxx</td>
+              <td></td>
             </tr>
             <tr>
               <td>**</td>
@@ -403,22 +403,53 @@
             <tr>
               <td>/</td>
               <td>Division</td>
-              <td>xxx</td>
+              <td></td>
             </tr>
             <tr>
               <td>%</td>
-              <td>Modulus</td>
-              <td>xxx</td>
+              <td>
+                Der Modulo-Operator (%) gibt den Restwert zurück, der übrig
+                bleibt wenn ein Operand durch einen anderen geteilt wird.
+              </td>
+              <td>
+                Beispiel: <br />
+                <code>console.log(13 % 5);</code><br /><br />
+                Ergibt: 3, weil 13/5 = 2 mit einem Restwert von 3
+              </td>
             </tr>
             <tr>
               <td>++</td>
-              <td>Increment</td>
-              <td>xxx</td>
+              <td>
+                Inkrementiert einen Operanden, addiert also eins hinzu und gibt
+                einen Wert zurück. Kann davor und danch eingesetzt werden.
+                <br />
+                Postfix (z.B. x++): der Operand wird um eins erhöht und der Wert
+                vor dem Inkrementieren zurückgegeben. Prefix (z.B. ++x), der
+                Operand wird um eins erhöht und der Wert nach dem Inkrementieren
+                zurückgegeben.
+              </td>
+              <td>
+                Beispiel: <br />
+                <code
+                  >let x = 3;<br />
+                  y = x++;<br
+                /></code>
+                Ergibt: y = 3; x = 4<br /><br />
+                <code
+                  >let a = 2;<br />
+                  b = ++a;</code
+                ><br />
+                Ergibt: a = 3, b = 3
+              </td>
             </tr>
             <tr>
               <td>--</td>
-              <td>Decrement</td>
-              <td>xxx</td>
+              <td>
+                Dekrementiert den Operanden um eins, zieht also eins vom
+                Operanden ab und gibt einen Wert zurück. Kann genau wie bei ++
+                vor oder danach angewendet werden.
+              </td>
+              <td>siehe ++</td>
             </tr>
             <tr>
               <td colspan="3" class="thead-2-start">
@@ -428,59 +459,38 @@
             </tr>
             <tr>
               <td>=</td>
-              <td>xxx</td>
-              <td>
-                Beispiel: <code>x = y</code><br /><br />
-                Ist gleichbedeutend mit <code>x = y</code>
-              </td>
+              <td>Ist gleichbedeutend mit <code>x = y</code></td>
+              <td>Beispiel: <code>x = y</code></td>
             </tr>
             <tr>
               <td>+=</td>
-              <td></td>
-              <td>
-                Beispiel: <code>x += y</code><br /><br />
-                Ist gleichbedeutend mit <code>x = x + y</code>
-              </td>
+              <td>Ist gleichbedeutend mit <code>x = x + y</code></td>
+              <td>Beispiel: <code>x += y</code></td>
             </tr>
             <tr>
               <td>-=</td>
-              <td></td>
-              <td>
-                Beispiel: <code>x -= y</code><br /><br />
-                Ist gleichbedeutend mit <code>x = x - y</code>
-              </td>
+              <td>Ist gleichbedeutend mit <code>x = x - y</code></td>
+              <td>Beispiel: <code>x -= y</code></td>
             </tr>
             <tr>
               <td>*=</td>
-              <td></td>
-              <td>
-                Beispiel: <code>x *= y</code><br /><br />
-                Ist gleichbedeutend mit <code>x = x * y</code>
-              </td>
+              <td>Ist gleichbedeutend mit <code>x = x * y</code></td>
+              <td>Beispiel: <code>x *= y</code></td>
             </tr>
             <tr>
               <td>/=</td>
-              <td></td>
-              <td>
-                Beispiel: <code>x /= y</code><br /><br />
-                Ist gleichbedeutend mit <code>x = x / y</code>
-              </td>
+              <td>Ist gleichbedeutend mit <code>x = x / y</code></td>
+              <td>Beispiel: <code>x /= y</code></td>
             </tr>
             <tr>
               <td>%=</td>
-              <td></td>
-              <td>
-                Beispiel: <code>x %= y</code><br /><br />
-                Ist gleichbedeutend mit <code>x = x % y</code>
-              </td>
+              <td>Ist gleichbedeutend mit <code>x = x % y</code></td>
+              <td>Beispiel: <code>x %= y</code></td>
             </tr>
             <tr>
               <td>**=</td>
-              <td></td>
-              <td>
-                Beispiel: <code>x **= y</code><br /><br />
-                Ist gleichbedeutend mit <code>x = x ** y</code>
-              </td>
+              <td>Ist gleichbedeutend mit <code>x = x ** y</code></td>
+              <td>Beispiel: <code>x **= y</code></td>
             </tr>
             <tr>
               <td colspan="3" class="thead-2-start">
@@ -492,32 +502,32 @@
             <tr>
               <td>==</td>
               <td>gleicher Wert</td>
-              <td>xxx</td>
+              <td></td>
             </tr>
             <tr>
               <td>===</td>
               <td>gleicher Wert und gleicher Typ</td>
-              <td>xxx</td>
+              <td></td>
             </tr>
             <tr>
               <td>!=</td>
               <td>nicht gleicher Wert</td>
-              <td>xxx</td>
+              <td></td>
             </tr>
             <tr>
               <td>!==</td>
               <td>nicht der gleiche Wert und nicht der gleiche Typ</td>
-              <td>xxx</td>
+              <td></td>
             </tr>
             <tr>
               <td>&#62;</td>
               <td>größerer Wert</td>
-              <td>xxx</td>
+              <td></td>
             </tr>
             <tr>
               <td>&#60;</td>
               <td>kleiner Wert</td>
-              <td>xxx</td>
+              <td></td>
             </tr>
             <tr>
               <td>&#62;=</td>
@@ -546,7 +556,7 @@
                 Operator steht für UND. Werte müssen die verknüpften Bedingungen
                 erfüllen.
               </td>
-              <td>xxx</td>
+              <td></td>
             </tr>
             <tr>
               <td>||</td>
@@ -554,7 +564,7 @@
                 Operator steht für ODER. Werte müssen eine der verknüpften
                 Bedingungen erfüllen.
               </td>
-              <td>xxx</td>
+              <td></td>
             </tr>
             <tr>
               <td>!</td>
@@ -562,7 +572,7 @@
                 Operator steht für NICHT. Werte werden umgekehrt und so wird aus
                 <code>true</code> beispielsweise <code>false</code>.
               </td>
-              <td>xxx</td>
+              <td></td>
             </tr>
           </tbody>
         </table>
