@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
 
+/* ===== COLORS ===== */
+
+:root{
+    --lightgreen: aquamarine;
+    --lightergreen: rgb(169, 248, 222);
+}
+
+/* ===== GENERAL STYLES ===== */
+
 *{
     margin: 0;
     padding: 0;
@@ -15,10 +24,6 @@ html
 
 h1{
     font-size: 3rem;
-    padding: 1rem;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-    padding-left: 1rem;
 }
 
 h2{
@@ -26,16 +31,25 @@ h2{
     margin-bottom: 1rem;
 }
 
-/*----- Header -----*/
-
-
-/*----- Sections -----*/
-
-section{
-    margin-left: 3rem;
-    background-color: white;
-    width: 80vw;
+a::before{
+    content: "> ";
 }
+
+/* ===== HEADER ===== */
+
+header{
+    padding: 20px;
+}
+
+/* ===== MAIN ===== */
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* ===== SECTIONS ===== */
 
 table{
     margin-bottom: 3rem;
@@ -67,15 +81,11 @@ span{
 }
 
 thead{
-    background-color: aquamarine;
-}
-
-a::before{
-    content: "> ";
+    background-color: var(--lightgreen);
 }
 
 .thead-2-start, .thead-2-ende{
-    background-color: rgb(169, 248, 222);
+    background-color: var(--lightergreen);
 }
 
 .thead-2-start::before{
@@ -84,4 +94,33 @@ a::before{
 
 .thead-2-ende::after{
     content:' <';
+}
+
+/* SECTIONS */
+
+.inactive {
+    display: none;
+}
+
+.active{
+    display: unset;
+    background-color: white;
+    width: 100%;
+}
+
+/* ===== FORM ===== */
+
+form{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+select{
+    max-width: 500px;
+    width: 50%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: unset;
+    background-color: var(--lightergreen);
 }

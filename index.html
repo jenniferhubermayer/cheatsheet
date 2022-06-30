@@ -4,15 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spickzettel für Terminal und Git-Kommandos</title>
+    <title>Spickzettel für Front-End-Bootcamp @supercode</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <header>
-      <h1>Spickzettel für Terminal und Git-Kommandos</h1>
+      <h1>Spickzettel für Front-End-Bootcamp @supercode</h1>
     </header>
     <main>
-      <section id="git-kommandos">
+      <form action="">
+        <select name="topic" id="topic" onchange="showTopic()">
+          <option value="showGit" selected>Git-Kommandos</option>
+          <option value="showTerminal">Terminal-Kommandos</option>
+          <option value="showJSMethoden">JavaScript-Methoden</option>
+          <!-- <option value="showJSAnweisungen">JavaScript-Anweisungen</option> -->
+        </select>
+      </form>
+      <section id="git-kommandos" class="inactive element">
         <h2>Git-Kommandos</h2>
         <table>
           <thead>
@@ -184,7 +192,7 @@
           </tbody>
         </table>
       </section>
-      <section id="terminal-kommandos">
+      <section id="terminal-kommandos" class="inactive element">
         <h2>Terminal-Kommandos</h2>
         <table>
           <thead>
@@ -240,6 +248,8 @@
           </tbody>
         </table>
       </section>
+      <section id="js-methoden" class="inactive element">BLIBLABLUP</section>
     </main>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
