@@ -128,4 +128,7 @@ select{
     border: none;
     border-radius: unset;
     background-color: var(--lightergreen);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
