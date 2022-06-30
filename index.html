@@ -14,10 +14,31 @@
     <main>
       <form action="">
         <select name="topic" id="topic" onchange="showTopic()">
-          <option value="showGit" selected>Git-Kommandos</option>
-          <option value="showTerminal">Terminal-Kommandos</option>
-          <option value="showJSMethoden">JavaScript-Methoden</option>
-          <option value="showJSOperatoren">JavaScript-Operatoren</option>
+          <option
+            value="showGit"
+            onclick="history.pushState({}, '', '#Git')"
+            selected
+          >
+            Git-Kommandos
+          </option>
+          <option
+            value="showTerminal"
+            onclick="history.pushState({}, '', '#Terminal')"
+          >
+            Terminal-Kommandos
+          </option>
+          <option
+            value="showJSMethoden"
+            onclick="history.pushState({}, '', '#JS-Methoden')"
+          >
+            JavaScript-Methoden
+          </option>
+          <option
+            value="showJSOperatoren"
+            onclick="history.pushState({}, '', '#JS-Operatoren')"
+          >
+            JavaScript-Operatoren
+          </option>
           <!-- <option value="showJSAnweisungen">JavaScript-Anweisungen</option> -->
         </select>
       </form>
@@ -255,6 +276,7 @@
         </table>
       </section>
       <section id="js-methoden" class="inactive element">
+        <h2>JavaScript-Methoden</h2>
         <table>
           <thead>
             <th>Methode</th>
@@ -333,6 +355,7 @@
         </table>
       </section>
       <section id="js-operatoren" class="inactive element">
+        <h2>JavaScript-Operatoren</h2>
         <table>
           <thead>
             <th>Operator</th>
