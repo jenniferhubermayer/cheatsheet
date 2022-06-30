@@ -17,6 +17,7 @@
           <option value="showGit" selected>Git-Kommandos</option>
           <option value="showTerminal">Terminal-Kommandos</option>
           <option value="showJSMethoden">JavaScript-Methoden</option>
+          <option value="showJSOperatoren">JavaScript-Operatoren</option>
           <!-- <option value="showJSAnweisungen">JavaScript-Anweisungen</option> -->
         </select>
       </form>
@@ -216,39 +217,333 @@
             <tr>
               <td>ls</td>
               <td>"List" - zeigt den Inhalt eines Ordners an</td>
-              <td>ls -a zeigt auch unsichtbare Dateien an</td>
+              <td><code>ls -a</code> zeigt auch unsichtbare Dateien an</td>
             </tr>
             <tr>
               <td>cp</td>
               <td>"Copy" - kopiert Datei</td>
-              <td>Beispiel: cp Pfad/Quellordner Pfad/Zielordner</td>
+              <td>
+                Beispiel: <code>cp Pfad/Quellordner Pfad/Zielordner</code>
+              </td>
             </tr>
             <tr>
               <td>mv</td>
               <td>"Move" - verschiebt eine Datei</td>
-              <td>Beispiel: mv Pfad/Quellordner Pfad/Zielordner</td>
+              <td>
+                Beispiel: <code>mv Pfad/Quellordner Pfad/Zielordner</code>
+              </td>
             </tr>
             <tr>
               <td>rm</td>
               <td>"Remove" - löscht Dateien</td>
               <td>
-                Datei: rm Pfad/Datei; Ordner: rmdir -R ~/Documents/Löschen
+                Datei: <code>rm Pfad/Datei</code>; Ordner:
+                <code>rmdir -R ~/Documents/Löschen</code>
               </td>
             </tr>
             <tr>
               <td>mkdir</td>
               <td>"Make Directory" - erzeugt einen neuen Ordner</td>
-              <td>Beispiel: mkdir "Ordnerbezeichnung"</td>
+              <td>Beispiel: <code>mkdir "Ordnerbezeichnung"</code></td>
             </tr>
             <tr>
               <td>touch</td>
               <td>Erzeugt eine leere Datei</td>
-              <td>Beispiel: touch Dateiname(.Dateitypendung)</td>
+              <td>Beispiel: <code>touch Dateiname(.Dateitypendung)</code></td>
             </tr>
           </tbody>
         </table>
       </section>
-      <section id="js-methoden" class="inactive element">BLIBLABLUP</section>
+      <section id="js-methoden" class="inactive element">
+        <table>
+          <thead>
+            <th>Methode</th>
+            <th>Beispiel</th>
+            <th>Beschreibung</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>replace()</td>
+              <td>
+                <code>let result = text.replace(/blue/g, "red");</code><br />
+                Ersetzt global das Wort blue mit dem Wort red.<br /><br />
+
+                <code>let result = text.replace(„,“, „ “);</code><br />
+                Ersetzt das erste Komma durch ein Leerzeichen.
+              </td>
+              <td>
+                Ersetzen von Bestandteilen, beispielsweise eines Punktes statt
+                Kommas. Bei der Anwendung darauf achten, ob es global angewendet
+                oder nur das erste Element ersetzt werden soll.
+              </td>
+            </tr>
+            <tr>
+              <td>join()</td>
+              <td>
+                <code
+                  >const fruits = ["Banana", "Orange", "Mango"];<br />
+                  let text = fruits.join("");</code
+                ><br /><br />
+                Ergibt: BananaOrangeMango"
+              </td>
+              <td>
+                Gibt einen Array als String wieder. In den Klammern wird der
+                Separator angegeben, der die einzelnen Indexe innerhalb des
+                Strings trennen soll.
+              </td>
+            </tr>
+            <tr>
+              <td>toString()</td>
+              <td>
+                <code>const num3 = num.toString();</code><br /><br />
+                Wandelt die Variable num in einen String um und gibt ihn in der
+                neuen Variable num3 aus.
+              </td>
+              <td>Wandelt eine Number in einen String um.</td>
+            </tr>
+            <tr>
+              <td>toFixed()</td>
+              <td>
+                <code>console.log(num.toFixed(2));</code><br /><br />
+                Zeigt die Variable num mit zwei Dezimalzahlen an.
+              </td>
+              <td>
+                Wandelt die Zahl in eine Kommazahl um, der Wert in den Klammern
+                bestimmt wie viele Nachkommastellen es geben soll.
+              </td>
+            </tr>
+            <tr>
+              <td>toPrecision()</td>
+              <td>
+                <code>console.log(num.toPrecision(20));</code><br /><br />
+                Zeigt die Variable num in 20 Ziffern an.
+              </td>
+              <td>Zeigt eine Nummer mit der definierte Anzahl Ziffern an.</td>
+            </tr>
+            <tr>
+              <td>Number()</td>
+              <td>
+                <code>num2 = Number(num);</code><br /><br />
+                Wandelt die Variable num in eine Nummer um und gibt sie in der
+                neuen Variable num2 aus.
+              </td>
+              <td>Wandelt einen String in eine Number um.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="js-operatoren" class="inactive element">
+        <table>
+          <thead>
+            <th>Operator</th>
+            <th>Beschreibung</th>
+            <th>Info</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="3" class="thead-2-start">
+                Arithmetische Operatoren (Verwendung: Mathematische
+                Berechnungen)
+              </td>
+            </tr>
+            <tr>
+              <td>+</td>
+              <td>Addition</td>
+              <td>xxx</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>Sustraktion</td>
+              <td>xxx</td>
+            </tr>
+            <tr>
+              <td>*</td>
+              <td>Multiplikation</td>
+              <td>xxx</td>
+            </tr>
+            <tr>
+              <td>**</td>
+              <td>
+                Der Potenzierungsoperator (**) gibt das Ergebnis der
+                Potenzierung des ersten Operanden mit dem zweiten Operanden
+                zurück.
+              </td>
+              <td>
+                Beispiel:<br /><code>let x = 3;</code><br />
+                <code>x **= 2;</code><br /><br />
+                Ergibt: 9, weil 3 * 3 berechnet wurde.<br /><br />
+                Beispiel:<br /><code>let x = 3;</code><br />
+                <code>x **= 3;</code><br /><br />
+                Ergibt: 27, weil 3 * 3 * 3 berechnet wurde.
+              </td>
+            </tr>
+            <tr>
+              <td>/</td>
+              <td>Division</td>
+              <td>xxx</td>
+            </tr>
+            <tr>
+              <td>%</td>
+              <td>Modulus</td>
+              <td>xxx</td>
+            </tr>
+            <tr>
+              <td>++</td>
+              <td>Increment</td>
+              <td>xxx</td>
+            </tr>
+            <tr>
+              <td>--</td>
+              <td>Decrement</td>
+              <td>xxx</td>
+            </tr>
+            <tr>
+              <td colspan="3" class="thead-2-start">
+                Zuweisungsoperatoren (Verwendung: JavaScript-Variablen Werte
+                zuweisen)
+              </td>
+            </tr>
+            <tr>
+              <td>=</td>
+              <td>xxx</td>
+              <td>
+                Beispiel: <code>x = y</code><br /><br />
+                Ist gleichbedeutend mit <code>x = y</code>
+              </td>
+            </tr>
+            <tr>
+              <td>+=</td>
+              <td></td>
+              <td>
+                Beispiel: <code>x += y</code><br /><br />
+                Ist gleichbedeutend mit <code>x = x + y</code>
+              </td>
+            </tr>
+            <tr>
+              <td>-=</td>
+              <td></td>
+              <td>
+                Beispiel: <code>x -= y</code><br /><br />
+                Ist gleichbedeutend mit <code>x = x - y</code>
+              </td>
+            </tr>
+            <tr>
+              <td>*=</td>
+              <td></td>
+              <td>
+                Beispiel: <code>x *= y</code><br /><br />
+                Ist gleichbedeutend mit <code>x = x * y</code>
+              </td>
+            </tr>
+            <tr>
+              <td>/=</td>
+              <td></td>
+              <td>
+                Beispiel: <code>x /= y</code><br /><br />
+                Ist gleichbedeutend mit <code>x = x / y</code>
+              </td>
+            </tr>
+            <tr>
+              <td>%=</td>
+              <td></td>
+              <td>
+                Beispiel: <code>x %= y</code><br /><br />
+                Ist gleichbedeutend mit <code>x = x % y</code>
+              </td>
+            </tr>
+            <tr>
+              <td>**=</td>
+              <td></td>
+              <td>
+                Beispiel: <code>x **= y</code><br /><br />
+                Ist gleichbedeutend mit <code>x = x ** y</code>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="thead-2-start">
+                Vergleichsoperatoren (Verwendung: In logischen Anweisungen, um
+                die Gleichheit oder Differenz zwischen Variablen oder Werten zu
+                bestimmen.)
+              </td>
+            </tr>
+            <tr>
+              <td>==</td>
+              <td>gleicher Wert</td>
+              <td>xxx</td>
+            </tr>
+            <tr>
+              <td>===</td>
+              <td>gleicher Wert und gleicher Typ</td>
+              <td>xxx</td>
+            </tr>
+            <tr>
+              <td>!=</td>
+              <td>nicht gleicher Wert</td>
+              <td>xxx</td>
+            </tr>
+            <tr>
+              <td>!==</td>
+              <td>nicht der gleiche Wert und nicht der gleiche Typ</td>
+              <td>xxx</td>
+            </tr>
+            <tr>
+              <td>&#62;</td>
+              <td>größerer Wert</td>
+              <td>xxx</td>
+            </tr>
+            <tr>
+              <td>&#60;</td>
+              <td>kleiner Wert</td>
+              <td>xxx</td>
+            </tr>
+            <tr>
+              <td>&#62;=</td>
+              <td>größerer oder gleicher Wert</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>&#60;=</td>
+              <td>kleinerer oder gleicher Wert</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>?</td>
+              <td>ternary operator</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="3" class="thead-2-start">
+                Logische Operatoren (Verwendung: Um logische Verknüpfungen zu
+                formulieren.)
+              </td>
+            </tr>
+            <tr>
+              <td>&&</td>
+              <td>
+                Operator steht für UND. Werte müssen die verknüpften Bedingungen
+                erfüllen.
+              </td>
+              <td>xxx</td>
+            </tr>
+            <tr>
+              <td>||</td>
+              <td>
+                Operator steht für ODER. Werte müssen eine der verknüpften
+                Bedingungen erfüllen.
+              </td>
+              <td>xxx</td>
+            </tr>
+            <tr>
+              <td>!</td>
+              <td>
+                Operator steht für NICHT. Werte werden umgekehrt und so wird aus
+                <code>true</code> beispielsweise <code>false</code>.
+              </td>
+              <td>xxx</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </main>
     <script src="./assets/js/main.js"></script>
   </body>

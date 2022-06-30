@@ -5,6 +5,7 @@
 :root{
     --lightgreen: aquamarine;
     --lightergreen: rgb(169, 248, 222);
+    --lighteryellow: lightyellow;
 }
 
 /* ===== GENERAL STYLES ===== */
@@ -33,6 +34,10 @@ h2{
 
 a::before{
     content: "> ";
+}
+
+code{
+    background-color: var(--lighteryellow);
 }
 
 /* ===== HEADER ===== */
